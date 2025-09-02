@@ -178,7 +178,7 @@ app.patch("/book/:id", upload.single("image"), async (req, res) => {
 });
 app.use(express.static("./storage/"));
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   //yo last ma rakhni......process.env.PORT(write this in 3000)
   console.log("Nodejs is running on port 3000");
 });
