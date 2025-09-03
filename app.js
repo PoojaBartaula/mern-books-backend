@@ -17,7 +17,7 @@ connectToDatabase();
 
 //app.get("/path",(request,respond))
 app.use(cors({ origin: "*" }));
-app.get("/postman", (req, res) => {
+app.get("/", (req, res) => {
   //abc= request, add= respond
   res.send("Hello World");
 });
